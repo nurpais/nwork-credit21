@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav
   \***********************/
 /***/ (function() {
 
-eval("if (document.querySelector(\"#navbar-burger\")) {\n  let navbarBurger = document.querySelector(\"#navbar-burger\");\n\n  navbarBurger.addEventListener(\"click\", function () {\n    document.documentElement.classList.toggle(\"navbar--active\");\n  });\n}\n\n\n//# sourceURL=webpack://Lending-bee/./src/navbar.js?");
+eval("if (document.querySelector(\"#navbar-burger\")) {\n  let navbarBurger = document.querySelector(\"#navbar-burger\");\n\n  navbarBurger.addEventListener(\"click\", function () {\n    document.documentElement.classList.toggle(\"navbar--active\");\n  });\n\n  window.addEventListener(\"scroll\", function (e) {\n    console.log(window.pageYOffset);\n    if (window.pageYOffset > 32) {\n      document.documentElement.classList.add(\"navbar--sticky\");\n    } else {\n      document.documentElement.classList.remove(\"navbar--sticky\");\n    }\n  });\n}\n\n\n//# sourceURL=webpack://Lending-bee/./src/navbar.js?");
 
 /***/ })
 

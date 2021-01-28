@@ -40,8 +40,12 @@ $container-padding-x: 22px;
 $theme-colors: (
   "primary": $primary-600,
   "secondary": $secondary-200,
+  "gray": $bg,
 );
 // scss-docs-end theme-colors-map
+
+// Grid columns
+$grid-gutter-width: 20px;
 
 $spacer: 5px;
 $spacers: (
