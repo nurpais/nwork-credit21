@@ -1,0 +1,71 @@
+// Colors
+$primary-100: #dcedff;
+$primary-200: #b6d8ff;
+$primary-300: #90c2ff;
+$primary-400: #6aadff;
+$primary-500: #4f92f8;
+$primary-600: #4285f4;
+$primary-700: #2e76e3;
+$primary-800: #1967d2;
+
+$secondary-100: #ffe323;
+$secondary-200: #ffd919;
+
+$dark-100: #909090;
+$dark-200: #202020;
+
+$bg: #f4f7fc;
+$dark: $dark-200;
+$primary: $primary-600;
+$secondary: $secondary-200;
+$disabled: #e0e2e4;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1222px,
+);
+
+// Container padding
+$container-padding-x: 22px;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary": $primary-600,
+  "secondary": $secondary-200,
+);
+// scss-docs-end theme-colors-map
+
+$spacer: 5px;
+$spacers: (
+  0: 0,
+  5: $spacer,
+  10: $spacer * 2,
+  15: $spacer * 3,
+  20: $spacer * 4,
+  25: $spacer * 5,
+  30: $spacer * 6,
+  35: $spacer * 7,
+  40: $spacer * 8,
+  45: $spacer * 9,
+  50: $spacer * 10,
+  55: $spacer * 11,
+  60: $spacer * 12,
+  65: $spacer * 13,
+  70: $spacer * 14,
+  75: $spacer * 15,
+  80: $spacer * 16,
+  85: $spacer * 17,
+  90: $spacer * 18,
+  95: $spacer * 19,
+  100: $spacer * 20,
+);
+
+$radius: 10px;
