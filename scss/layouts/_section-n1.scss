@@ -1,0 +1,13 @@
+.section-n1 {
+  padding: 42px 0 44px;
+
+  @include media-breakpoint-down(lg) {
+    &__img {
+      transform: translateX(-22px);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 88px 0 140px;
+  }
+}

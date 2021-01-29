@@ -2,6 +2,7 @@
 @import "abstract/variables";
 @import "abstract/classes";
 @import "abstract/spacing";
+@import "abstract/mixins";
 
 // BOOTSTRAP
 @import "../node_modules/bootstrap/scss/bootstrap-utilities.scss";
@@ -20,10 +21,14 @@
 // LAYOUTS
 @import "layouts/navbar";
 @import "layouts/footer";
+@import "layouts/section-n1";
+@import "layouts/section-masks";
+@import "layouts/section-why";
 
 // COMPONENTS
 @import "components/buttons";
 @import "components/services-card";
+@import "components/primary-card";
 
 // PAGES
 @import "pages/home";

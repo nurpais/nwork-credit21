@@ -1,0 +1,12 @@
+.section-why {
+  padding: 50px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 132px 0 150px;
+  }
+}
+
+.why-us-swiper {
+  margin-right: -22px;
+  margin-left: -22px;
+}

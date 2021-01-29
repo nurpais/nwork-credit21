@@ -28,15 +28,28 @@ input {
   font-size: inherit;
 }
 
-// // SWIPER
-// .swiper-pagination-bullet {
-//   background: #fff;
-//   border: 1px solid #d3d3d3 !important;
-//   opacity: 1;
-//   width: 10px;
-//   height: 10px;
-// }
+// SWIPER
+.swiper-container {
+  cursor: grab;
+}
 
-// .swiper-pagination-bullet.swiper-pagination-bullet-active {
-//   background-color: $primary;
-// }
+.swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1 !important;
+  width: 12px;
+  height: 12px;
+  margin: 0 10px !important;
+  background-color: #e0e2e4 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $primary !important;
+}

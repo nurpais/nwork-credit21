@@ -1,0 +1,25 @@
+.section-masks {
+  background-color: $secondary;
+  text-align: center;
+  padding: 30px 0;
+
+  &__heading {
+    font-weight: 800;
+    text-shadow: 2px 2px 5px #e1bb00;
+  }
+
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+    padding: 10px 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__content {
+      text-align: right;
+    }
+  }
+}
