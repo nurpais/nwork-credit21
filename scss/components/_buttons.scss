@@ -18,6 +18,16 @@
     background-color: lighten($secondary, 8%);
   }
 
+  &--primary {
+    background-color: $primary;
+    box-shadow: 0px 0px 15px rgba(0, 59, 255, 0.3);
+    color: #fff;
+
+    &:hover {
+      background-color: lighten($primary, 8%);
+    }
+  }
+
   @include media-breakpoint-up(lg) {
     font-size: 20px;
   }

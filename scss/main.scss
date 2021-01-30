@@ -24,11 +24,14 @@
 @import "layouts/section-n1";
 @import "layouts/section-masks";
 @import "layouts/section-why";
+@import "layouts/section-news";
+@import "layouts/cta";
 
 // COMPONENTS
 @import "components/buttons";
-@import "components/services-card";
+@import "components/service-card";
 @import "components/primary-card";
+@import "components/news-card";
 
 // PAGES
 @import "pages/home";

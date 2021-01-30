@@ -191,3 +191,54 @@
     padding: 144px 0;
   }
 }
+
+// SECTION SERVICES
+.section-services {
+  padding: 44px 0 50px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 200px 0;
+
+    .services-row > *:nth-child(odd) {
+      transform: translateY(-50px);
+    }
+
+    .services-row > *:nth-child(even) {
+      transform: translateY(50px);
+    }
+  }
+}
+
+.section-overlay {
+  @include media-breakpoint-up(lg) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $bg;
+      z-index: -1;
+    }
+  }
+}
+
+// SECTION LEVEL
+.section-level {
+  padding: 44px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 144px 0 244px;
+  }
+}
+
+// SECTION CTA
+.section-cta {
+  @include media-breakpoint-down(lg) {
+    background-color: $bg;
+    padding: 100px 0 50px;
+  }
+}
