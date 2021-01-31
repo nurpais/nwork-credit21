@@ -49,6 +49,7 @@
 
   .select-icon {
     position: relative;
+    // display: block;
 
     &::after {
       content: "";
@@ -185,7 +186,7 @@
   z-index: 10;
   max-width: 536px;
   padding: 30px 30px 165px;
-  background-image: url(../../images/modal-bg.png);
+  background-image: url(../images/modal-bg.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   margin: 0 22px;

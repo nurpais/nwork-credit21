@@ -6,7 +6,6 @@ if (document.querySelector("#navbar-burger")) {
   });
 
   window.addEventListener("scroll", function (e) {
-    console.log(window.pageYOffset);
     if (window.pageYOffset > 32) {
       document.documentElement.classList.add("navbar--sticky");
     } else {
