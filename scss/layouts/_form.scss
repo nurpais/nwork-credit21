@@ -1,0 +1,234 @@
+.form {
+  &__body {
+    @include card;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+  }
+
+  &__field {
+    background-color: $bg;
+    border: 1px solid $disabled;
+    border-radius: 10px;
+    padding: 10px 20px 20px 10px;
+  }
+
+  &__label span {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    font-family: inherit;
+  }
+
+  &__input {
+    width: 100%;
+    height: auto;
+    line-height: 22px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    outline: none;
+    font-size: 16px;
+
+    &::placeholder {
+      color: $dark-100;
+      font-size: 16px;
+    }
+  }
+
+  select {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    position: relative;
+    z-index: 10;
+  }
+
+  .select-icon {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 20px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      position: absolute;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDE2IDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04IDcuMTIyMDdMNy4yOTI4OSA3LjgyOTE4QzcuNjgzNDIgOC4yMTk3IDguMzE2NTggOC4yMTk3IDguNzA3MTEgNy44MjkxOEw4IDcuMTIyMDdaTTIuNjQ2MTkgMC4zNTQwNDhDMi4yNTU2NyAtMC4wMzY0NzY0IDEuNjIyNSAtMC4wMzY0NzY0IDEuMjMxOTggMC4zNTQwNDhDMC44NDE0NTMgMC43NDQ1NzIgMC44NDE0NTMgMS4zNzc3NCAxLjIzMTk4IDEuNzY4MjZMMi42NDYxOSAwLjM1NDA0OFpNMTQuNzY4IDEuNzY4MjZDMTUuMTU4NSAxLjM3Nzc0IDE1LjE1ODUgMC43NDQ1NzIgMTQuNzY4IDAuMzU0MDQ4QzE0LjM3NzUgLTAuMDM2NDc2NCAxMy43NDQzIC0wLjAzNjQ3NjQgMTMuMzUzOCAwLjM1NDA0OEwxNC43NjggMS43NjgyNlpNOC43MDcxMSA2LjQxNDk2TDIuNjQ2MTkgMC4zNTQwNDhMMS4yMzE5OCAxLjc2ODI2TDcuMjkyODkgNy44MjkxOEw4LjcwNzExIDYuNDE0OTZaTTEzLjM1MzggMC4zNTQwNDhMNy4yOTI4OSA2LjQxNDk2TDguNzA3MTEgNy44MjkxOEwxNC43NjggMS43NjgyNkwxMy4zNTM4IDAuMzU0MDQ4WiIgZmlsbD0iIzkwOTA5MCIvPgo8L3N2Zz4K");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 95%;
+    resize: none;
+  }
+
+  &__privacy {
+    display: flex;
+  }
+
+  &__privacy-icon {
+    flex-shrink: 0;
+    max-width: 32px;
+    margin-right: 10px;
+  }
+
+  &__privacy-description {
+    max-width: 520px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__submit {
+    margin-top: 27px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__body {
+      padding: 50px 80px;
+      gap: 20px;
+
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__field {
+      padding: 10px 20px 20px 20px;
+
+      &:last-child {
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 2;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__privacy-icon {
+      max-width: 40px;
+    }
+
+    &__submit {
+      margin-top: 0;
+    }
+  }
+}
+
+.eligible {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 600;
+  color: $primary;
+  padding: 0;
+  cursor: pointer;
+
+  img {
+    max-width: 22px;
+    margin-right: 5px;
+    transform: translateY(-4px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 16px;
+
+    img {
+      max-width: 26px;
+    }
+  }
+}
+
+.eligible-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal--active .eligible-modal-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+.eligible-modal-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, 0.8);
+}
+
+.eligible-modal {
+  @include card;
+  position: relative;
+  z-index: 10;
+  max-width: 536px;
+  padding: 30px 30px 165px;
+  background-image: url(../../images/modal-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin: 0 22px;
+  max-height: 95vh;
+  //   overflow: auto;
+
+  &__list {
+    padding-left: 36px;
+  }
+
+  &__list-item {
+    position: relative;
+
+    & + & {
+      margin-top: 14px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -36px;
+      width: 26px;
+      height: 26px;
+      background-image: url(../images/svg/icon-list.svg);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 40px 50px 165px;
+  }
+}
+
+.modal-close {
+  @include button-reset;
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  z-index: 210;
+  cursor: pointer;
+
+  @include media-breakpoint-up(md) {
+    top: -21px;
+    right: -21px;
+  }
+}

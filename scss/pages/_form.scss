@@ -1,0 +1,9 @@
+.form-container {
+  padding: 44px 0 60px;
+
+  background-color: $bg;
+
+  @include media-breakpoint-up(lg) {
+    padding: 80px 0;
+  }
+}
