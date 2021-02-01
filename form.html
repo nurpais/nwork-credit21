@@ -38,10 +38,18 @@
         <div class="container">
           <a href="/" class="navbar__logo">
             <img src="images/svg/logo-light.svg" alt="Credit 21" />
+            <img src="images/svg/logo-primary.svg" alt="Credit 21" />
           </a>
 
           <button class="navbar__burger d-lg-none" id="navbar-burger">
-            <img class="navbar__burger-open" src="images/svg/burger.svg" alt="Open the menu" />
+            <svg class="navbar__burger-open" width="25" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                d="M1.5 1.5h22M1.5 9.5h22M1.5 17.5h22"
+              />
+            </svg>
             <img class="navbar__burger-close" src="images/svg/burger-close.svg" alt="Close the menu" />
           </button>
 
@@ -173,6 +181,7 @@
       </div>
     </div>
     <!-- NAVBAR COMPONENT END -->
+
     <div class="bg-gray">
       <!-- FORM MAIN -->
       <main class="form-container">
@@ -206,7 +215,7 @@
               <div class="form__field">
                 <label class="form__label">
                   <span>Purpose of Loan <em class="fw-400">(Select the most relevant) *</em></span>
-                  <span class="select-icon">
+                  <span class="select-icon mb-0">
                     <select class="form__input">
                       <option>Personal Loan</option>
                       <option>Option 2</option>

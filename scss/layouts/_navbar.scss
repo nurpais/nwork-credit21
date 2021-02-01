@@ -17,11 +17,51 @@
   }
 }
 
+// STICKY STATE
 .navbar--sticky .navbar-wrapper {
   position: fixed;
   @include media-breakpoint-up(lg) {
     top: -32px;
   }
+}
+
+.navbar--sticky .navbar {
+  background-color: #fff;
+  box-shadow: 0px 3px 10px rgba(32, 32, 32, 0.08);
+}
+
+.navbar--sticky .navbar__logo {
+  img {
+    &:nth-child(1) {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      display: block;
+    }
+  }
+}
+
+.navbar--sticky .navbar__menu-link {
+  color: $dark;
+  opacity: 1;
+}
+
+.navbar--sticky .navbar__menu-link--active {
+  color: $primary;
+
+  &::after {
+    background-color: currentColor;
+  }
+}
+
+.navbar--sticky .navbar-button {
+  background-color: $primary;
+  color: #fff;
+}
+
+.navbar--sticky .navbar__burger-open {
+  color: $primary;
 }
 
 // navbar top
@@ -70,6 +110,7 @@
   background-color: rgba($primary, 0.85);
   position: relative;
   z-index: 100;
+  transition: background-color 0.2s ease;
 
   .container {
     height: 60px;
@@ -86,6 +127,14 @@
   &__logo {
     max-width: 118px;
     display: inline-block;
+    width: 100%;
+    img {
+      width: 100%;
+
+      &:nth-child(2) {
+        display: none;
+      }
+    }
   }
 
   // burger
@@ -98,6 +147,7 @@
     margin: 0;
     position: relative;
     z-index: 20;
+    color: #fff;
   }
 
   &__burger-close {
