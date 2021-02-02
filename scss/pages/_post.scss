@@ -1,0 +1,124 @@
+.post-main {
+  padding: 50px 0 0;
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 60px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 80px 0 145px;
+  }
+}
+
+.post-heading {
+  @include media-breakpoint-down(lg) {
+    font-size: 26px;
+  }
+}
+
+.post-img {
+  margin-top: 24px;
+
+  @include media-breakpoint-down(sm) {
+    margin-left: -22px;
+    margin-right: -22px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 44px;
+  }
+}
+
+.main-post-row {
+  margin-top: 26px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 50px;
+  }
+}
+
+.post-content {
+  max-width: 700px;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 44px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-style: 22px;
+    line-height: 32px;
+    margin-bottom: 13px;
+  }
+
+  img + * {
+    margin-top: 30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 0;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.post-widget {
+  @include media-breakpoint-down(sm) {
+    margin-right: -22px;
+    margin-left: -22px;
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+
+.widget-heading {
+  font-weight: 700;
+  font-size: 18px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
+
+.categories {
+  @include card;
+  overflow: hidden;
+
+  &__item:nth-child(odd) {
+    background-color: #f5f5f5;
+  }
+
+  &__link {
+    padding: 14px 30px 12px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: $dark-100;
+
+    &--active {
+      color: $primary;
+    }
+  }
+
+  &__heading {
+    padding: 18px 30px 16px;
+    background-color: $dark;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__heading {
+      font-size: 20px;
+    }
+  }
+}

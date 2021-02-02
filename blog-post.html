@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit 21</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- NAVBAR COMPONENT -->
+    <div class="navbar-wrapper">
+      <div class="navbar-top d-none d-lg-block">
+        <div class="container">
+          <p class="text-sm">
+            Credit 21 Pte. Ltd. is a <a href="#">licensed moneylender</a> (Licence No. 57/2020) listed in the Registry
+            of Moneylenders (S/No. 37), under the Ministry of Law in Singapore.
+          </p>
+
+          <ul class="navbar-top__list">
+            <li class="navbar-top__list-item">
+              <a href="tel:62191611" class="navbar-top__list-link">
+                <img src="images/svg/icon-tel.svg" alt="" />
+                <span>6219 1611</span>
+              </a>
+            </li>
+
+            <li class="navbar-top__list-item">
+              <a href="#" class="navbar-top__list-link">
+                <img src="images/svg/icon-signin.svg" alt="" />
+                <span>Sign In</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div class="container">
+          <a href="/" class="navbar__logo">
+            <img src="images/svg/logo-light.svg" alt="Credit 21" />
+            <img src="images/svg/logo-primary.svg" alt="Credit 21" />
+          </a>
+
+          <button class="navbar__burger d-lg-none" id="navbar-burger">
+            <svg class="navbar__burger-open" width="25" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                d="M1.5 1.5h22M1.5 9.5h22M1.5 17.5h22"
+              />
+            </svg>
+            <img class="navbar__burger-close" src="images/svg/burger-close.svg" alt="Close the menu" />
+          </button>
+
+          <ul class="navbar__menu">
+            <li class="navbar__menu-item d-lg-none navbar-buttons">
+              <a href="#" class="navbar-button__primary">Apply For Loan</a>
+              <a href="#" class="navbar-button__outline">
+                <svg width="11" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 7.03v4.053C0 12.693 1.319 14 2.946 14h4.997c1.627 0 2.946-1.306 2.946-2.917V7.03c0-.805-.66-1.459-1.473-1.459H1.473C.659 5.571 0 6.225 0 7.03zM5.444 0C3.362 0 1.667 1.678 1.667 3.74v1.268h1.917V3.74c0-1.015.835-1.84 1.859-1.84 1.025 0 1.86.827 1.86 1.84v1.268H9.22V3.74C9.22 1.678 7.526 0 5.444 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                <span>Sign In</span>
+              </a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link navbar__menu-link--active">Home</a>
+            </li>
+            <li class="navbar__menu-item dropdown">
+              <a class="navbar__menu-link">Loans</a>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Loan Calculator</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Personal Loans</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Business Loans</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Lifestage Financing</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Education Financing</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Travel Financing</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Medical Financing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu-item dropdown">
+              <a href="#" class="navbar__menu-link">About Us</a>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">About Credit 21</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Customer Review</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Career</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu-item dropdown">
+              <a href="#" class="navbar__menu-link">Contact Us</a>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Location</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Contacts</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Opening Hours</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Blog</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Scam Alert</a>
+            </li>
+            <li class="navbar__menu-item ms-30 d-none d-lg-block">
+              <a href="#" class="navbar-button">Apply For Loan</a>
+            </li>
+
+            <li class="d-lg-none mt-55">
+              <footer class="footer navbar-footer">
+                <div class="navbar-footer-container d-block">
+                  <a href="/" class="footer__logo mb-20 mb-lg-0">
+                    <img loading="lazy" src="images/svg/logo-primary.svg" alt="" />
+                  </a>
+
+                  <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Home</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Personal Loan</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Debt Consolidation</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Apply Loan</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Contact Us</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Privacy Policy</a>
+                    </li>
+                  </ul>
+
+                  <a href="#top" class="gotop footer__gotop">
+                    <img loading="lazy" src="images/svg/icon-gotop.svg" alt="Go top" />
+                  </a>
+                </div>
+
+                <!-- footer copy -->
+                <div class="footer__copy">
+                  <p>Copyright © 2020 Credit 21 Pte Ltd. All Rights Reserved. Licence No. 57/2020</p>
+                </div>
+              </footer>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR COMPONENT END -->
+
+    <main class="post-main bg-gray">
+      <div class="container">
+        <p class="text-md text-lg-normal fw-bold text-gray-100">Lifestyle</p>
+        <h1 class="heading-secondary post-heading mt-16 mt-lg-25">
+          10 Different HDB Renovation Ideas And Styles You Can Experiment With And Their Cost
+        </h1>
+        <p class="text-lg mt-14 mt-lg-20">December 9, 2020</p>
+
+        <div class="post-img">
+          <img loading="lazy" src="images/post.png" alt="" />
+        </div>
+
+        <div class="row main-post-row g-sm-40">
+          <div class="col-md-8">
+            <div class="post-content">
+              <p>
+                Hotel? Trivago.
+                <br /><br />
+                Furniture? Ikea.
+                <br /><br />
+                Most of us would probably be looking to get our home furniture from IKEA since it’s the most convenient
+                and popular option.
+                <br /><br />
+                However, for some of us who don’t wish for our apartments to mimic the overused Ikea look, you’ve come
+                to the right place!
+                <br /><br />
+                From luxurious design to nautical themes and modern industrial decors, we found the most exciting ideas
+                on the market to spare you the research.
+                <br /><br />
+                The quest to find the right HDB renovation ideas and styles begins here!
+              </p>
+
+              <h2>1. The Right Focal Points</h2>
+
+              <img loading="lazy" src="images/post-content-1.png" alt="" />
+
+              <p>
+                This Telok Blangah Heights apartment designed by Stylemyspace is the perfect example of how you can hide
+                the clutter and brighten your apartment.
+                <br /><br />
+                The pieces of art and colourful pillows create focal points and a sense of optimism. The rooms are
+                brightened with mirrors and expansive windows that allow plenty of natural light, while the
+                garland-style lighting makes the apartment seem cosy.
+                <br /><br />
+
+                Besides, there isn’t any clutter anywhere because the wardrobes and cabinets mask your belongings
+                carefully.
+                <br /><br />
+
+                Cost: $57,000
+              </p>
+
+              <h2>2. Opulence</h2>
+              <img loading="lazy" src="images/post-content-2.png" alt="" />
+              <p>
+                If you love all things grand and luxurious, this design is right up your alley. This Yishun Ring Road
+                flat designed by Livspace is the picture of classical opulence that transports you in the time of
+                European Renaissance.
+                <br /><br />
+                The flowing curtains, laced table covers, and tufted furniture invite you to spend hours relaxing. The
+                furry pillows are a unique touch, caressing your skin and attracting your gaze.
+                <br /><br />
+                Even the small balcony is decorated with plush pillows, while the white kitchen sparks cleanliness.
+                <br /><br />
+                The bedroom keeps the same creamy-white, foamy richness created through the plus beds, curtains, and
+                candelabra.
+                <br /><br />
+                Cost: $56,000
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="post-widget">
+              <h3 class="widget-heading mb-20">You May Also Like</h3>
+
+              <div class="row g-20">
+                <div class="col-12">
+                  <a href="#" class="news-card news-card--widget">
+                    <div class="news-card__hero">
+                      <img loading="lazy" src="images/news-3.png" alt="" />
+                    </div>
+                    <div class="news-card__body">
+                      <div class="news-card__info">
+                        <div class="news-card__category fw-bold">Investing</div>
+                      </div>
+                      <h4 class="news-card__heading">
+                        Value Investing: What Is It & What Are The 10 Blue-Chip Stocks Trading Near Their 52-Week Low
+                        Share Prices (2020 Update)
+                      </h4>
+
+                      <div class="news-card__bottom">
+                        <div class="news-card__link">Read More</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="news-card news-card--widget">
+                    <div class="news-card__hero">
+                      <img loading="lazy" src="images/news-1.png" alt="" />
+                    </div>
+                    <div class="news-card__body">
+                      <div class="news-card__info">
+                        <div class="news-card__category fw-bold">Personal Finance</div>
+                      </div>
+                      <h4 class="news-card__heading">
+                        All You Need To Know About Petrol Prices Singapore & Credit Card Discounts 2020
+                      </h4>
+
+                      <div class="news-card__bottom">
+                        <div class="news-card__link">Read More</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <ul class="categories mt-50">
+                <li class="categories__item">
+                  <h5 class="categories__link categories__heading">Explore More</h5>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link">All</a>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link">Business</a>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link">Career</a>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link">Education</a>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link">Investing</a>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link categories__link--active">Lifestyle</a>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link">Loans</a>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link">News</a>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link">Personal Finance</a>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link">Property</a>
+                </li>
+                <li class="categories__item">
+                  <a href="#" class="categories__link">Self Improvement</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer class="footer bg-sm-gray">
+      <div class="container">
+        <a href="/" class="footer__logo mb-20 mb-lg-0">
+          <img loading="lazy" src="images/svg/logo-primary.svg" alt="" />
+        </a>
+
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Home</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Personal Loan</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Debt Consolidation</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Apply Loan</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Contact Us</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <a href="#top" class="gotop footer__gotop">
+          <img loading="lazy" src="images/svg/icon-gotop.svg" alt="Go top" />
+        </a>
+      </div>
+
+      <!-- footer copy -->
+      <div class="footer__copy">
+        <p>Copyright © 2020 Credit 21 Pte Ltd. All Rights Reserved. Licence No. 57/2020</p>
+      </div>
+    </footer>
+    <!-- FOOTER END  -->
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

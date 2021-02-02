@@ -69,3 +69,30 @@
     }
   }
 }
+
+.news-card {
+  &--widget &__body {
+    padding: 20px 22px 30px;
+  }
+
+  &--widget &__heading {
+    font-size: 16px;
+    line-height: 1.4;
+    height: auto;
+  }
+
+  &--widget &__bottom {
+    margin-top: 15px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &--widget &__body {
+      padding: 30px;
+    }
+
+    &--widget &__heading {
+      font-size: 18px;
+      height: 100px;
+    }
+  }
+}

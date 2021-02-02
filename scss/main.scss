@@ -33,8 +33,12 @@
 @import "components/service-card";
 @import "components/primary-card";
 @import "components/news-card";
+@import "components/review-card";
+
 
 // PAGES
 @import "pages/home";
 @import "pages/form";
 @import "pages/blog";
+@import "pages/post";
+@import "pages/reviews";

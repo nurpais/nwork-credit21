@@ -16,12 +16,22 @@
   margin-top: 14px;
 }
 
+.mt-16 {
+  margin-top: 16px;
+}
+
 .mt-24 {
   margin-top: 24px;
 }
 
 .mt-34 {
   margin-top: 34px;
+}
+
+.bg-sm-gray {
+  @media (min-width: 576px) {
+    background-color: #f4f7fc;
+  }
 }
 
 .swiper-gradient {
