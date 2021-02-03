@@ -125,68 +125,6 @@
 .section-mission {
   padding: 44px 0;
 
-  @include media-breakpoint-down(lg) {
-    .fixed-height {
-      max-height: 768px;
-      overflow: hidden;
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 375px;
-        width: 100%;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 87.5%);
-      }
-
-      &--active {
-        max-height: initial;
-        padding-bottom: 70px;
-
-        &::after {
-          content: none;
-        }
-      }
-
-      &--active .button-load-more {
-        span {
-          &:nth-child(1) {
-            display: none;
-          }
-
-          &:nth-child(2) {
-            display: inline;
-          }
-        }
-      }
-    }
-
-    .button-load-more {
-      position: absolute;
-      bottom: 5px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
-      width: 220px;
-      height: 50px;
-      border: 2px solid #4285f4;
-      border-radius: 10px;
-      background-color: #fff;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 22px;
-      color: $primary;
-      cursor: pointer;
-      outline: none;
-
-      span:nth-child(2) {
-        display: none;
-      }
-    }
-  }
-
   @include media-breakpoint-up(lg) {
     padding: 144px 0;
   }
@@ -240,5 +178,67 @@
   @include media-breakpoint-down(lg) {
     background-color: $bg;
     padding: 100px 0 50px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .fixed-height {
+    max-height: 768px;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 375px;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 87.5%);
+    }
+
+    &--active {
+      max-height: initial;
+      padding-bottom: 70px;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    &--active .button-load-more {
+      span {
+        &:nth-child(1) {
+          display: none;
+        }
+
+        &:nth-child(2) {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  .button-load-more {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 220px;
+    height: 50px;
+    border: 2px solid #4285f4;
+    border-radius: 10px;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $primary;
+    cursor: pointer;
+    outline: none;
+
+    span:nth-child(2) {
+      display: none;
+    }
   }
 }

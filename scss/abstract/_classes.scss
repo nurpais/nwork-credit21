@@ -38,6 +38,13 @@
   position: relative;
 
   @media (min-width: 768px) {
+    &--lg {
+      &::before,
+      &::after {
+        width: 190px !important;
+      }
+    }
+
     &::before,
     &::after {
       content: "";

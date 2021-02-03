@@ -1,0 +1,88 @@
+.loan-header {
+  h1,
+  p {
+    color: #fff;
+  }
+
+  margin: 0;
+  padding: 103px 0 194px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 32px;
+    padding: 150px 0 94px;
+  }
+}
+
+// SECTION LOAN
+.section-loan {
+  @include media-breakpoint-down(md) {
+    margin-top: -95px;
+    padding-bottom: 50px;
+  }
+
+  &__img {
+    max-width: 497px;
+    width: 100%;
+    float: right;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.1));
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 136px 0 144px;
+  }
+}
+
+// SECTION BENEFITS
+.section-benefits {
+  padding: 44px 0 50px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 136px 0 150px;
+  }
+}
+
+.benefits {
+  text-align: center;
+
+  &__icon {
+    height: 80px;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+// SECTION FAQ
+.section-faq {
+  padding: 45px 0 50px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 140px 0 150px;
+  }
+}
+
+// SECTION REVIEWS
+.section-reviews {
+  padding: 50px 0;
+
+  &__steps {
+    margin-bottom: 74px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 150px 0;
+
+    &__steps {
+      margin-bottom: 138px;
+    }
+  }
+}
+
+// SECTION NEWS
+.loan-news {
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 150px;
+  }
+}

@@ -1,0 +1,12 @@
+.reviews-swiper {
+  padding-bottom: 36px;
+  @include media-breakpoint-down(sm) {
+    margin-left: -22px;
+    margin-right: -22px;
+    padding-left: 22px;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 50px;
+  }
+}

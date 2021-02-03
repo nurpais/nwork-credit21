@@ -13,6 +13,8 @@
   transition: background-color 0.2s ease;
   font-family: inherit;
   white-space: nowrap;
+  cursor: pointer;
+  outline: none;
 
   font-size: 16px;
   font-weight: 600;
@@ -29,6 +31,26 @@
     &:hover {
       background-color: lighten($primary, 8%);
     }
+  }
+
+  &--outline {
+    border: 2px solid $primary;
+    color: $primary;
+    background-color: #fff;
+    box-shadow: none;
+
+    &:hover {
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+
+  &--sm {
+    max-width: 220px;
+  }
+
+  &--transparent {
+    background-color: transparent;
   }
 
   @include media-breakpoint-up(lg) {

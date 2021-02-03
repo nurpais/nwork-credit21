@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit 21</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- NAVBAR COMPONENT -->
+    <div class="navbar-wrapper">
+      <div class="navbar-top d-none d-lg-block">
+        <div class="container">
+          <p class="text-sm">
+            Credit 21 Pte. Ltd. is a <a href="#">licensed moneylender</a> (Licence No. 57/2020) listed in the Registry
+            of Moneylenders (S/No. 37), under the Ministry of Law in Singapore.
+          </p>
+
+          <ul class="navbar-top__list">
+            <li class="navbar-top__list-item">
+              <a href="tel:62191611" class="navbar-top__list-link">
+                <img src="images/svg/icon-tel.svg" alt="" />
+                <span>6219 1611</span>
+              </a>
+            </li>
+
+            <li class="navbar-top__list-item">
+              <a href="#" class="navbar-top__list-link">
+                <img src="images/svg/icon-signin.svg" alt="" />
+                <span>Sign In</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div class="container">
+          <a href="/" class="navbar__logo">
+            <img src="images/svg/logo-light.svg" alt="Credit 21" />
+            <img src="images/svg/logo-primary.svg" alt="Credit 21" />
+          </a>
+
+          <button class="navbar__burger d-lg-none" id="navbar-burger">
+            <svg class="navbar__burger-open" width="25" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                d="M1.5 1.5h22M1.5 9.5h22M1.5 17.5h22"
+              />
+            </svg>
+            <img class="navbar__burger-close" src="images/svg/burger-close.svg" alt="Close the menu" />
+          </button>
+
+          <ul class="navbar__menu">
+            <li class="navbar__menu-item d-lg-none navbar-buttons">
+              <a href="#" class="navbar-button__primary">Apply For Loan</a>
+              <a href="#" class="navbar-button__outline">
+                <svg width="11" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 7.03v4.053C0 12.693 1.319 14 2.946 14h4.997c1.627 0 2.946-1.306 2.946-2.917V7.03c0-.805-.66-1.459-1.473-1.459H1.473C.659 5.571 0 6.225 0 7.03zM5.444 0C3.362 0 1.667 1.678 1.667 3.74v1.268h1.917V3.74c0-1.015.835-1.84 1.859-1.84 1.025 0 1.86.827 1.86 1.84v1.268H9.22V3.74C9.22 1.678 7.526 0 5.444 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                <span>Sign In</span>
+              </a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link navbar__menu-link--active">Home</a>
+            </li>
+            <li class="navbar__menu-item dropdown">
+              <a class="navbar__menu-link">Loans</a>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Loan Calculator</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Personal Loans</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Business Loans</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Lifestage Financing</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Education Financing</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Travel Financing</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Medical Financing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu-item dropdown">
+              <a href="#" class="navbar__menu-link">About Us</a>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">About Credit 21</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Customer Review</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Career</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu-item dropdown">
+              <a href="#" class="navbar__menu-link">Contact Us</a>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Location</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Contacts</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link">Opening Hours</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Blog</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Scam Alert</a>
+            </li>
+            <li class="navbar__menu-item ms-30 d-none d-lg-block">
+              <a href="#" class="navbar-button">Apply For Loan</a>
+            </li>
+
+            <li class="d-lg-none mt-55">
+              <footer class="footer navbar-footer">
+                <div class="navbar-footer-container d-block">
+                  <a href="/" class="footer__logo mb-20 mb-lg-0">
+                    <img loading="lazy" src="images/svg/logo-primary.svg" alt="" />
+                  </a>
+
+                  <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Home</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Personal Loan</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Debt Consolidation</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Apply Loan</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Contact Us</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#" class="footer__menu-link">Privacy Policy</a>
+                    </li>
+                  </ul>
+
+                  <a href="#top" class="gotop footer__gotop">
+                    <img loading="lazy" src="images/svg/icon-gotop.svg" alt="Go top" />
+                  </a>
+                </div>
+
+                <!-- footer copy -->
+                <div class="footer__copy">
+                  <p>Copyright © 2020 Credit 21 Pte Ltd. All Rights Reserved. Licence No. 57/2020</p>
+                </div>
+              </footer>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR COMPONENT END -->
+
+    <!-- HEADER -->
+    <header class="loan-header gradient-radial">
+      <div class="container text-md-center">
+        <h1 class="heading-primary">
+          Apply for One of the Best <br class="d-none d-md-block" />
+          Personal Loans 2020 for Fast Cash
+        </h1>
+        <p class="text-lg mt-14 mt-md-20">
+          We offer unsecured loans up to $100,000 SGD with longer loan tenures to
+          <br class="d-none d-md-block" />provide you with one of the best personal loans in town.
+        </p>
+
+        <a href="#" class="button mt-24 mt-md-40">Apply Now</a>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- SECTION LOAN -->
+    <section class="section-loan">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-md-2">
+            <img loading="lazy" class="section-loan__img" src="images/loan.png" alt="" />
+          </div>
+
+          <div class="col-md-6 order-md-1 mt-30 mt-md-0">
+            <h2 class="heading-secondary">What is Personal Loan?</h2>
+            <p class="text-dark-100 fw-bold mt-14 mt-md-20">
+              Credit 21 is one of the TOP lenders for Personal Loan Services in 2020
+            </p>
+
+            <div class="fixed-height">
+              <p class="mt-24 mt-md-35">
+                A personal loan is an unsecured line of credit that can easily help you reach your goals. <br /><br />
+                Time is precious. Packed with busy schedules, advanced technology and the constant mobile notifications,
+                we hustle a lot. At any point of our lives, whether we are studying, building our careers or starting a
+                family, there will be times when we need money, fast.
+                <br /><br />
+                Lending Bee® can take care of that for you.
+                <br /><br />
+                We understand that each individual is different. This is why we are able to specially tailor a personal
+                loan package to suit your needs.
+                <br /><br />
+                We offer 3-minute fast and easy loan applications where you will be able to receive your money in cash
+                or cheque on the spot should all documents be ready. Simply apply online with us and receive the funds
+                you need.
+                <br /><br />
+                Worried about taking out personal loans for the first time? Our friendly and experienced loan officers
+                will be happy to help and guide you through the process.
+                <br /><br />
+                Make that progress in life with our personal loans today.
+              </p>
+
+              <button
+                class="button-load-more d-lg-none"
+                onclick="this.closest('.fixed-height').classList.toggle('fixed-height--active')"
+              >
+                <span>Load More</span>
+                <span>Show Less</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION LOAN END -->
+
+    <!-- BENEFITS SECTION -->
+    <section class="section-benefits bg-gray">
+      <div class="container text-md-center">
+        <h2 class="heading-secondary">
+          Benefits of a Personal Loan <br class="d-none d-md-block" />
+          with Credit 21
+        </h2>
+        <p class="text-dark-100 fw-bold mt-14 mt-md-20">
+          Our personal loans stand out as we provide our borrowers with a wide range of unique benefits.
+        </p>
+
+        <div class="mt-30 mt-md-45">
+          <div class="row gy-50">
+            <div class="col-sm-6 col-md-3">
+              <div class="benefits">
+                <div class="benefits__icon">
+                  <img src="images/svg/benefits-score.svg" alt="" />
+                </div>
+                <h4 class="mt-10 mt-md-20">
+                  Better and Improved <br />
+                  Credit Scores
+                </h4>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+              <div class="benefits">
+                <div class="benefits__icon">
+                  <img src="images/svg/benefits-tenures.svg" alt="" />
+                </div>
+                <h4 class="mt-10 mt-md-20">
+                  Flexible <br />
+                  Loan Tenures
+                </h4>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+              <div class="benefits">
+                <div class="benefits__icon">
+                  <img src="images/svg/benefits-application.svg" alt="" />
+                </div>
+                <h4 class="mt-10 mt-md-20">
+                  Ease of Application <br />
+                  and Approval
+                </h4>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+              <div class="benefits">
+                <div class="benefits__icon">
+                  <img src="images/svg/benefits-convenience.svg" alt="" />
+                </div>
+                <h4 class="mt-10 mt-md-15">Increased Convenience</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="#" class="button mt-45 mt-lg-95 text-normal">Apply For Loan</a>
+        </div>
+      </div>
+    </section>
+    <!-- BENEFITS SECTION END -->
+
+    <!-- SECTION FAQ -->
+    <section class="section-faq text-md-center">
+      <div class="container">
+        <h2 class="heading-secondary">Frequently Asked Questions​</h2>
+        <p class="text-dark-100 fw-bold mt-14 mt-md-20">We have the answers for you.</p>
+
+        <div class="accordions mt-35 mt-md-45">
+          <div class="accordion">
+            <div class="accordion__header">
+              <h4 class="fw-bold">How do your personal loans differ from those from banks?</h4>
+            </div>
+            <div class="accordion__body">
+              <p>
+                We believe in providing you with a personal loan in the shortest time possible. This is why we have
+                streamlined our borrowing process into 3 simple steps. Moreover, we do not go through rigorous credit
+                checks and also do not require much paperwork. <br /><br />
+                Ultimately, our experienced loan officers will be there to guide you on the best personal loan package
+                for your needs and provide professional advice so that you’ll be able to achieve your financial goals.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion__header">
+              <h4 class="fw-bold">How do your personal loans differ from those from banks?</h4>
+            </div>
+            <div class="accordion__body">
+              <p>
+                We believe in providing you with a personal loan in the shortest time possible. This is why we have
+                streamlined our borrowing process into 3 simple steps. Moreover, we do not go through rigorous credit
+                checks and also do not require much paperwork. <br /><br />
+                Ultimately, our experienced loan officers will be there to guide you on the best personal loan package
+                for your needs and provide professional advice so that you’ll be able to achieve your financial goals.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion__header">
+              <h4 class="fw-bold">How do your personal loans differ from those from banks?</h4>
+            </div>
+            <div class="accordion__body">
+              <p>
+                We believe in providing you with a personal loan in the shortest time possible. This is why we have
+                streamlined our borrowing process into 3 simple steps. Moreover, we do not go through rigorous credit
+                checks and also do not require much paperwork. <br /><br />
+                Ultimately, our experienced loan officers will be there to guide you on the best personal loan package
+                for your needs and provide professional advice so that you’ll be able to achieve your financial goals.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion__header">
+              <h4 class="fw-bold">How do your personal loans differ from those from banks?</h4>
+            </div>
+            <div class="accordion__body">
+              <p>
+                We believe in providing you with a personal loan in the shortest time possible. This is why we have
+                streamlined our borrowing process into 3 simple steps. Moreover, we do not go through rigorous credit
+                checks and also do not require much paperwork. <br /><br />
+                Ultimately, our experienced loan officers will be there to guide you on the best personal loan package
+                for your needs and provide professional advice so that you’ll be able to achieve your financial goals.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion__header">
+              <h4 class="fw-bold">How do your personal loans differ from those from banks?</h4>
+            </div>
+            <div class="accordion__body">
+              <p>
+                We believe in providing you with a personal loan in the shortest time possible. This is why we have
+                streamlined our borrowing process into 3 simple steps. Moreover, we do not go through rigorous credit
+                checks and also do not require much paperwork. <br /><br />
+                Ultimately, our experienced loan officers will be there to guide you on the best personal loan package
+                for your needs and provide professional advice so that you’ll be able to achieve your financial goals.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion__header">
+              <h4 class="fw-bold">How do your personal loans differ from those from banks?</h4>
+            </div>
+            <div class="accordion__body">
+              <p>
+                We believe in providing you with a personal loan in the shortest time possible. This is why we have
+                streamlined our borrowing process into 3 simple steps. Moreover, we do not go through rigorous credit
+                checks and also do not require much paperwork. <br /><br />
+                Ultimately, our experienced loan officers will be there to guide you on the best personal loan package
+                for your needs and provide professional advice so that you’ll be able to achieve your financial goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION FAQ END -->
+
+    <!-- SECTION REVIEWS -->
+    <section class="section-reviews text-md-center bg-gray">
+      <div class="container">
+        <div class="steps steps--primary section-reviews__steps">
+          <div class="steps__header">
+            <h4 class="steps__heading">
+              <span>3 Simple Steps</span> <br />
+              to receive your <br />
+              instant cash loan
+            </h4>
+          </div>
+
+          <div class="steps__item">
+            <div class="steps__item-icon">
+              <img src="images/svg/steps-application.svg" alt="" />
+            </div>
+            <h5 class="fw-bold">Submit Online Application</h5>
+            <p class="mt-5">Register an account or simply fill up the loan application form. Takes only 3 mins.</p>
+          </div>
+
+          <div class="steps__item">
+            <div class="steps__item-icon">
+              <img src="images/svg/steps-status.svg" alt="" />
+            </div>
+            <h5 class="fw-bold">Receive Application Status</h5>
+            <p class="mt-5">Outcome of the loan with the maximum loan amount will be provided to you within an hour.</p>
+          </div>
+
+          <div class="steps__item">
+            <div class="steps__item-icon">
+              <img src="images/svg/steps-cash.svg" alt="" />
+            </div>
+            <h5 class="fw-bold">Fast Cash Disbursement</h5>
+            <p class="mt-5">
+              Head down to your selected Credit 21 branch, sign the contract and get your money instantly.
+            </p>
+          </div>
+
+          <a href="#" class="button m-0 fs-normal">Apply Now</a>
+        </div>
+
+        <h2 class="heading-secondary">
+          What Our <br class="d-md-none" />
+          Customers Say
+        </h2>
+
+        <p class="text-dark-100 fw-bold mt-14 mt-md-20">
+          As one of the top legal and licensed moneylenders in Singapore with more than 900 positive
+          <br class="d-none d-md-block" />
+          customer reviews, we aims to help all our customers financially.
+        </p>
+
+        <!-- Slider main container -->
+        <div class="swiper-container reviews-swiper swiper-gradient swiper-gradient--lg mt-45">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-card__header">
+                  <div class="review-card__img">
+                    <img src="images/review-2.png" alt="" />
+                  </div>
+                  <h4 class="review-card__heading">Random Gaming</h4>
+                </div>
+
+                <div class="review-card__body">
+                  <div class="review-card__stars">
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                  </div>
+
+                  <div class="review-card__date">June, 2020</div>
+
+                  <p class="review-card__description">
+                    They are very professional if you looking for financial consultants really helped you in doing your
+                    monthly calculations. this is my second time with them . and today 13th of june 2020 . theygive free
+                    a box mask to they're client's. so blessed . thanks lending bee. theygive free a box mask to they're
+                    client's. so blessed . thanks lending bee
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-card__header">
+                  <div class="review-card__img">
+                    <img src="images/review-3.png" alt="" />
+                  </div>
+                  <h4 class="review-card__heading">Random Gaming</h4>
+                </div>
+
+                <div class="review-card__body">
+                  <div class="review-card__stars">
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                  </div>
+
+                  <div class="review-card__date">June, 2020</div>
+
+                  <p class="review-card__description">
+                    They are very professional if you looking for financial consultants really helped you in doing your
+                    monthly calculations. this is my second time with them . and today 13th of june 2020 . theygive free
+                    a box mask to they're client's. so blessed . thanks lending bee. theygive free a box mask to they're
+                    client's. so blessed . thanks lending bee
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-card__header">
+                  <div class="review-card__img">
+                    <img src="images/review-4.png" alt="" />
+                  </div>
+                  <h4 class="review-card__heading">Random Gaming</h4>
+                </div>
+
+                <div class="review-card__body">
+                  <div class="review-card__stars">
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                    <img src="images/svg/star.svg" alt="" />
+                  </div>
+
+                  <div class="review-card__date">June, 2020</div>
+
+                  <p class="review-card__description">
+                    They are very professional if you looking for financial consultants really helped you in doing your
+                    monthly calculations. this is my second time with them . and today 13th of june 2020 . theygive free
+                    a box mask to they're client's. so blessed . thanks lending bee. theygive free a box mask to they're
+                    client's. so blessed . thanks lending bee
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="text-center mt-50">
+          <a href="#" class="button button--outline button--transparent button--sm fs-normal d-md-none">View All </a>
+          <a href="#" class="button button--outline button--transparent button--sm fs-normal d-none d-md-inline-flex">
+            Read More Reviews
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION REVIEWS END -->
+
+    <!-- SECTION NEWS -->
+    <section class="section-news loan-news">
+      <div class="container text-md-center">
+        <h2 class="heading-secondary">Latest Articles/News</h2>
+        <p class="text-gray-100 fw-bold mt-20 d-none d-md-inline-block">Learn more about the latest happenings.</p>
+
+        <!-- Slider main container -->
+        <div class="swiper-container news-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <a href="#" class="news-card">
+                <div class="news-card__hero">
+                  <img loading="lazy" src="images/news-1.png" alt="" />
+                </div>
+                <div class="news-card__body">
+                  <div class="news-card__info">
+                    <div class="news-card__category fw-bold">Personal Finance</div>
+                  </div>
+                  <h4 class="news-card__heading">
+                    All You Need To Know About Petrol Prices Singapore & Credit Card Discounts 2020
+                  </h4>
+
+                  <div class="news-card__bottom">
+                    <div class="news-card__link">Read More</div>
+                    <div class="news-card__date">Posted on Dec 9, 2020</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <a href="#" class="news-card">
+                <div class="news-card__hero">
+                  <img loading="lazy" src="images/news-2.png" alt="" />
+                </div>
+                <div class="news-card__body">
+                  <div class="news-card__info">
+                    <div class="news-card__category fw-bold">Lifestyle</div>
+                    <div class="news-card__date">Posted on Jan 3, 2021</div>
+                  </div>
+                  <h4 class="news-card__heading">
+                    All You Need To Know About Petrol Prices Singapore & Credit Card Discounts 2020
+                  </h4>
+
+                  <div class="news-card__bottom">
+                    <div class="news-card__link">Read More</div>
+                    <div class="news-card__date">Posted on Jan 3, 2021</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <a href="#" class="news-card">
+                <div class="news-card__hero">
+                  <img loading="lazy" src="images/news-3.png" alt="" />
+                </div>
+                <div class="news-card__body">
+                  <div class="news-card__info">
+                    <div class="news-card__category fw-bold">Investing</div>
+                  </div>
+                  <h4 class="news-card__heading">
+                    Value Investing: What Is It & What Are The 10 Blue-Chip Stocks Trading Near Their 52-Week Low Share
+                    Prices (2020 Update)
+                  </h4>
+
+                  <div class="news-card__bottom">
+                    <div class="news-card__link">Read More</div>
+                    <div class="news-card__date">Posted on Oct 12, 2020</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION NEWS END -->
+
+    <!-- FOOTER  -->
+    <footer class="footer bg-gray">
+      <div class="container">
+        <a href="/" class="footer__logo mb-20 mb-lg-0">
+          <img loading="lazy" src="images/svg/logo-primary.svg" alt="" />
+        </a>
+
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Home</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Personal Loan</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Debt Consolidation</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Apply Loan</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Contact Us</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <a href="#top" class="gotop footer__gotop">
+          <img loading="lazy" src="images/svg/icon-gotop.svg" alt="Go top" />
+        </a>
+      </div>
+
+      <!-- footer copy -->
+      <div class="footer__copy">
+        <p>Copyright © 2020 Credit 21 Pte Ltd. All Rights Reserved. Licence No. 57/2020</p>
+      </div>
+    </footer>
+    <!-- FOOTER END  -->
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

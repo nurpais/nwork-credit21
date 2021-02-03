@@ -36,6 +36,7 @@
     "webpack-cli": "^4.3.1"
   },
   "dependencies": {
+    "autonumeric": "^4.6.0",
     "bootstrap": "^5.0.0-beta1",
     "minireset.css": "0.0.6",
     "swiper": "^6.4.5"

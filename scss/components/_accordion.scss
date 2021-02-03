@@ -1,0 +1,76 @@
+.accordions {
+  & > * + * {
+    margin-top: 10px;
+  }
+}
+
+.accordion {
+  text-align: initial;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4f7fc;
+
+  &__header {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 16px 68px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background-image: url(../images/svg/accordion-caret.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      left: 30px;
+      top: 28px;
+      transition: transform 0.2s ease;
+      transform-origin: 50% 30%;
+    }
+
+    * {
+      transition: color 0.2s ease;
+    }
+  }
+
+  &__body {
+    max-height: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    padding-left: 68px;
+    padding-right: 20px;
+  }
+
+  &--active &__header {
+    color: $primary;
+  }
+
+  &--active &__body {
+    padding-bottom: 40px;
+  }
+
+  &--active &__header::before {
+    transform: rotate(-180deg);
+  }
+
+  @include media-breakpoint-up(md) {
+    &__header {
+      padding: 30px 40px 28px 94px;
+
+      &::before {
+        left: 40px;
+        top: 38px;
+      }
+    }
+
+    &__body {
+      padding-left: 94px;
+      padding-right: 40px;
+    }
+  }
+}

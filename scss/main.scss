@@ -34,7 +34,9 @@
 @import "components/primary-card";
 @import "components/news-card";
 @import "components/review-card";
-
+@import "components/accordion";
+@import "components/steps";
+@import "components/reviews-swiper";
 
 // PAGES
 @import "pages/home";
@@ -42,3 +44,5 @@
 @import "pages/blog";
 @import "pages/post";
 @import "pages/reviews";
+@import "pages/loan";
+@import "pages/calculator";
