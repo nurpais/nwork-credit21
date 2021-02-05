@@ -1,0 +1,190 @@
+.career-cards {
+  & > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @include media-breakpoint-up(lg) {
+  }
+  & > *:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.career-card {
+  text-align: initial;
+  @include card;
+  padding: 20px 20px 24px;
+
+  &__content-wrapper {
+    // max-width: 630px;
+  }
+
+  &__content {
+    max-width: 630px;
+    position: relative;
+  }
+
+  &__content {
+    h2 {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 34px;
+
+      & + * {
+        margin-top: 12px;
+      }
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+
+      & + * {
+        margin-top: 2px;
+      }
+    }
+
+    ul {
+      list-style: initial;
+      margin-left: 20px;
+
+      & + * {
+        margin-top: 14px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 30px 50px 24px;
+
+    &__content {
+      h2 {
+        font-size: 38px;
+        line-height: 48px;
+      }
+
+      h4 {
+        font-size: 20px;
+        line-height: 30px;
+
+        & + * {
+          margin-top: 16px;
+        }
+      }
+
+      ul {
+        & + * {
+          margin-top: 28px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &__content {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        width: 1px;
+        right: -30px;
+        bottom: 10px;
+        background: $disabled;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    &__content {
+      &::after {
+        right: -60px;
+      }
+    }
+  }
+}
+
+.career-card {
+  &__link {
+    max-width: 335px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__link-wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__link {
+      max-width: 335px;
+      display: inline-block;
+      width: 100%;
+      text-align: right;
+    }
+  }
+}
+
+.career-card {
+  max-height: 650px;
+  overflow: hidden;
+  position: relative;
+
+  &--active {
+    max-height: initial !important;
+    padding-bottom: 68px !important;
+
+    &::before {
+      content: none !important;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 220px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 72.67%);
+    z-index: 100;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-height: 430px;
+    &::before {
+      height: 194px;
+    }
+  }
+
+  &__show-more {
+    @include button-reset;
+    color: $primary;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 24px;
+    z-index: 200;
+    font-family: inherit;
+    cursor: pointer;
+
+    span:last-child {
+      display: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+    }
+  }
+
+  &--active &__show-more {
+    span:first-child {
+      display: none;
+    }
+
+    span:last-child {
+      display: block;
+    }
+  }
+}

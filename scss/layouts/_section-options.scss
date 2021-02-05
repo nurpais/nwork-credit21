@@ -1,0 +1,11 @@
+.section-options {
+  padding: 44px 0 60px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 150px 0;
+
+    &-row > *:nth-child(even) {
+      transform: translateY(100px);
+    }
+  }
+}
