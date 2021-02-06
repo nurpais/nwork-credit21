@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 999;
 
   @include media-breakpoint-up(lg) {
     position: absolute;
@@ -294,6 +294,7 @@
       padding: 20px 20px 26px 20px;
       background-color: #fff;
       transition: all 0.2s ease;
+      min-width: 172px;
     }
   }
 
